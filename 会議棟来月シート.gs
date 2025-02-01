@@ -47,6 +47,8 @@ function clearNewSheet(sheetToClear) {
   Logger.log(`Range D2:Z99 cleared in sheet "${sheetToClear.getName()}".`);
 }
 
+// Add menu element for the script.
+
 function onOpen() {
   const ui = SpreadsheetApp.getUi();
   ui.createMenu('まるやま')
