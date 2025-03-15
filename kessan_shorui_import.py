@@ -2,7 +2,21 @@ import pandas as pd
 from openpyxl import load_workbook
 
 def transfer_data():
-    try: ""
+
+    # Assign each source file a corresponding column in the target file.
+    try:
+        all_source_files = {
+            '515.xlsx': 3,   # Column D
+            '5151.xlsx': 4,  # Column E
+            '5152.xlsx': 5,  # Column F
+            '5153.xlsx': 6,  # Column G
+            '5154.xlsx': 7,  # Column H
+            '545.xlsx': 8,   # Column I
+            '5451.xlsx': 9,  # Column J
+            '5452.xlsx': 10, # Column K
+            '514.xlsx': 11,  # Column L
+            '544.xlsx': 12   # Column M
+        }
          
 
 
