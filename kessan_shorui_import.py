@@ -24,6 +24,9 @@ def transfer_data():
         for filename, col_index in all_source_files.items():
             print(f"Reading source file: {filename}...")
 
+        # Read source files with pandas
+        source_df = pd.read_excel(filename)
+
     except FileNotFoundError:
         print("Error: One or more Excel files not found. Make sure all files are in the same directory as this script.\nエラー：1 つまたは複数の Excel ファイルが見つからない。すべてのファイルがこのスクリプトと同じフォルダーにあることを確認してください。")
     except Exception as e:
