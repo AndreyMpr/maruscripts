@@ -19,7 +19,8 @@ def transfer_data():
         }
         
         source_dicts = {}
-         
+
+        # Print keys and values from each input excel to the screen.
         for filename, col_index in all_source_files.items():
             print(f"Reading source file: {filename}...")
 
