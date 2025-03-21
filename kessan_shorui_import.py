@@ -26,6 +26,8 @@ def transfer_data():
 
             # Read source files with pandas
             source_df = pd.read_excel(filename, dtype=str)
+            keys = source_df.iloc[:, 1]
+            values = source_df.iloc[:, -1]
 
     except FileNotFoundError:
         print("Error: One or more Excel files not found. Make sure all files are in the same directory as this script.\nエラー：1 つまたは複数の Excel ファイルが見つからない。すべてのファイルがこのスクリプトと同じフォルダーにあることを確認してください。")
