@@ -25,7 +25,7 @@ def transfer_data():
             print(f"Reading source file: {filename}...")
 
             # Read source files with pandas
-            source_df = pd.read_excel(filename)
+            source_df = pd.read_excel(filename, dtype=str)
 
     except FileNotFoundError:
         print("Error: One or more Excel files not found. Make sure all files are in the same directory as this script.\nエラー：1 つまたは複数の Excel ファイルが見つからない。すべてのファイルがこのスクリプトと同じフォルダーにあることを確認してください。")
