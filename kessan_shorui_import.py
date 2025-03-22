@@ -30,7 +30,7 @@ def transfer_data():
             values = source_df.iloc[:, -1].astype(str)
             source_dicts[col_index] = dict(zip(keys, values))
 
-    print(f"Keys for column {col_index} from {filename}: {list(source_dicts[col_index].keys())[:5]}...")
+            print(f"Keys for column {col_index} from {filename}: {list(source_dicts[col_index].keys())[:5]}...")
 
     except FileNotFoundError:
         print("Error: One or more Excel files not found. Make sure all files are in the same directory as this script.\nエラー：1 つまたは複数の Excel ファイルが見つからない。すべてのファイルがこのスクリプトと同じフォルダーにあることを確認してください。")
